@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.5;
+}
+.trafic-light{
+    width: 55rem;
+    height: 13rem;
+    background-color: red;
+    position: absolute;
+    top: 5rem;
+    padding: 1rem;
+    transition: opacity 4s;
+   
+}
+.light-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; 
+}
+.light{
+    width: 10rem;
+    height: 10rem;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0 2rem;
+    transition: background-color 1s;
+}
+
+.stop-watch{
+    color: green;
+    font-size: 10rem;
+    margin-left: 3rem;
+}
+
+.start.container{
+    opacity: 1;
+}
+.heading{
+    color: #2b81e4;
+    font-size: 10rem;
+    margin-top: 5rem;
+    text-shadow: 0.2rem 0.2rem 3rem black;
+    margin-bottom: 5rem;
+    text-shadow: 0 0.1rem 0.2rem #2b81e4;
+}
+.car-wrapper{
+    width: 100rem;
+    height: 20rem;
+    background-color: #2b81e4;
+    box-shadow: 0.2rem 0.2rem 3rem black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.my-speed{
+    font-size: 2rem;
+    margin: 3rem 0;
+    color: yellow;
+}
+.img-wrapper{
+    width: 100%;
+    height: 5rem;
+    background-color: white;
+    position: relative;
+}
+.car-img{
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    transform: rotateY(180deg);  
+}
+.text-wrapper{
+    width: 100rem;
+    background-color: white;
+    margin-top: 5rem;
+    padding: 1rem;
+    
+}
+.text{
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    font-weight: 900;
+}
+.input-text{
+    width: 100%;
+    height: 3rem;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.start-wprapper{
+    width: 40rem;
+    height: 20rem;
+    background-color: rgb(134, 57, 57);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 150;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3rem;
+}
+.start .start-wprapper{
+    display: none;
+}
+.start + .start-wprapper{
+    display: none;
+}
+.start-btn{
+    width: 20rem;
+    height: 5rem;
+    background-color: transparent;
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 0.2rem;
+    border-radius: 0.3rem;
+    border: none;
+    box-shadow: 0.5rem 0.5rem 1rem white;
+    cursor: pointer;
+    z-index: 200;
+}
